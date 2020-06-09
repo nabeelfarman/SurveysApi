@@ -85,35 +85,35 @@ namespace SurveysApi.Controllers
                     sqlResponse = parameters.Get<string>("@Response");
 
                 }
-                if (sqlResponse != "Record Saved Successfully!")
-                {
-                    sqlResponse = "Sorry! Your Email Doesn't Exists.";
-                }
-                else
-                {
-                    //* for setting email information details.
-                    using (MailMessage mail = new MailMessage())
-                    {
-                        mail.From = new MailAddress("noreply@survey.com");
-                        mail.To.Add(obj.email.ToString());
-                        mail.Subject = "Survey Account Password";
-                        mail.Body = "Hi" + obj.firstName + ", Your survey account password is <h1>" + obj.password + "</h1>";
-                        mail.IsBodyHtml = true;
+                // if (sqlResponse != "Record Saved Successfully!")
+                // {
+                //     sqlResponse = "Sorry! Your Email Doesn't Exists.";
+                // }
+                // else
+                // {
+                // //* for setting email information details.
+                // using (MailMessage mail = new MailMessage())
+                // {
+                //     mail.From = new MailAddress("noreply@survey.com");
+                //     mail.To.Add(obj.email.ToString());
+                //     mail.Subject = "Survey Account Password";
+                //     mail.Body = "Hi" + obj.firstName + ", Your survey account password is <h1>" + obj.password + "</h1>";
+                //     mail.IsBodyHtml = true;
 
-                        //* for setting smtp mail name and port
-                        using (SmtpClient smtp = new SmtpClient("mail.tierra.net", 24))
-                        // using (SmtpClient smtp = new SmtpClient("mail.gmail.com", 587))
-                        {
+                //     //* for setting smtp mail name and port
+                //     using (SmtpClient smtp = new SmtpClient("mail.tierra.net", 24))
+                //     // using (SmtpClient smtp = new SmtpClient("mail.gmail.com", 587))
+                //     {
 
-                            //* for setting sender credentials(email and password) using smtp
-                            smtp.Credentials = new System.Net.NetworkCredential("nabeel.farman@ms.infovativesolutions.com",
-                                                                                "N@b##l35");
-                            smtp.EnableSsl = true;
-                            smtp.Send(mail);
-                        }
-                    }
-                    sqlResponse = "Mail sent to your current email address!";
-                }
+                //         //* for setting sender credentials(email and password) using smtp
+                //         smtp.Credentials = new System.Net.NetworkCredential("nabeel.farman@ms.infovativesolutions.com",
+                //                                                             "N@b##l35");
+                //         smtp.EnableSsl = true;
+                //         smtp.Send(mail);
+                //     }
+                // }
+                // sqlResponse = "Mail sent to your current email address!";
+                // }
 
                 response = Ok(new { msg = sqlResponse });
 
