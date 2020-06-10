@@ -1,0 +1,14 @@
+D:\Infovative Projects\SurveysApi\bin\release\netcoreapp2.2\SurveysApi.deps.json
+D:\Infovative Projects\SurveysApi\bin\release\netcoreapp2.2\SurveysApi.runtimeconfig.json
+D:\Infovative Projects\SurveysApi\bin\release\netcoreapp2.2\SurveysApi.runtimeconfig.dev.json
+D:\Infovative Projects\SurveysApi\bin\release\netcoreapp2.2\SurveysApi.dll
+D:\Infovative Projects\SurveysApi\bin\release\netcoreapp2.2\SurveysApi.pdb
+D:\Infovative Projects\SurveysApi\obj\release\netcoreapp2.2\SurveysApi.csprojAssemblyReference.cache
+D:\Infovative Projects\SurveysApi\obj\release\netcoreapp2.2\SurveysApi.csproj.CoreCompileInputs.cache
+D:\Infovative Projects\SurveysApi\obj\release\netcoreapp2.2\SurveysApi.RazorAssemblyInfo.cache
+D:\Infovative Projects\SurveysApi\obj\release\netcoreapp2.2\SurveysApi.RazorAssemblyInfo.cs
+D:\Infovative Projects\SurveysApi\obj\release\netcoreapp2.2\SurveysApi.AssemblyInfoInputs.cache
+D:\Infovative Projects\SurveysApi\obj\release\netcoreapp2.2\SurveysApi.AssemblyInfo.cs
+D:\Infovative Projects\SurveysApi\obj\release\netcoreapp2.2\SurveysApi.RazorTargetAssemblyInfo.cache
+D:\Infovative Projects\SurveysApi\obj\release\netcoreapp2.2\SurveysApi.dll
+D:\Infovative Projects\SurveysApi\obj\release\netcoreapp2.2\SurveysApi.pdb
