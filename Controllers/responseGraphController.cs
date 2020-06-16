@@ -21,5 +21,14 @@ namespace SurveysApi.Controllers
     {
         // static string connectionString = "Data Source=in-matrix.database.windows.net;Initial Catalog=SurveyApp;Persist Security Info=True;User ID=dev_team;Password=infovative.123 providerName=System.Data.SqlClient";
         static string connectionString = "Server=tcp:in-matrix.database.windows.net,1433;Initial Catalog=SurveyApp;Persist Security Info=False;User ID=dev_team;Password=infovative.123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        
+        [HttpGet]
+        [Route("api/getIndividualType")]
+        [EnableCors("CorePolicy")]
+        public IEnumerable<individualType> getIndividualType()
+        {
+            List<individualType> rows = new List<individualType>();
+            return rows;
+        }
     }
 }
